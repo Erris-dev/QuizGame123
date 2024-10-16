@@ -60,7 +60,7 @@ a {
     max-width: 90rem;
     margin: 0 auto;
     background-color: #a7e8f9c0;
-    padding: 0 10rem;
+    padding: 0 1rem;
 }
 
 .flex-center {
@@ -84,4 +84,39 @@ a {
 
 .hidden {
     display: none;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+input {
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    width: 80%;
+    font-size: 1.5rem;
+    border: none;
+    box-shadow: 0 0.1rem 0.5rem  #1169dc;
+}
+
+#loader {
+    border: solid 1rem #ffff;
+    border-radius: 50%;
+    border-top: 1rem solid #1169dc;
+    width: 7rem;
+    height:7rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
